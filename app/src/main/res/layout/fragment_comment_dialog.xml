@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:background="@android:color/transparent"
+    android:gravity="bottom"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f5f5f5">
+
+        <LinearLayout
+            android:id="@+id/ll_comment_dialog_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:paddingRight="15dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="15dp"
+                android:background="@mipmap/ic_book_details_message_send" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="发送"
+                android:textColor="#666666"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_comment_dialog_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@id/ll_comment_dialog_send"
+            android:background="@null"
+            android:hint="回复："
+            android:maxHeight="88dp"
+            android:minHeight="46dp"
+            android:maxLength="500"
+            android:padding="15dp"
+            android:textColor="#999999"
+            android:textColorHint="#999999"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</LinearLayout>
